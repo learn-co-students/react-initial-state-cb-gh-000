@@ -1,8 +1,8 @@
 # React Initial State
 
-## Overview 
+## Overview
 
-In this lesson, we'll explain the concept of component state. 
+In this lesson, we'll explain the concept of component state.
 
 ## Objectives
 1. Explain how to define a component's initial state
@@ -22,7 +22,7 @@ State is used to handle several things in your component:
 As mentioned before, it's important to know the difference between props and state. Props and state are used as input for the `render()` method to determine its output, but they are _not_ the same thing! The best way to figure out if data should go in props or state is to ask ourselves _'Will this data ever change?'_. If not, it's a prop. If it will, it should go in state! Keep in mind that whenever props _and/or_ state change, the component will run its `render()` method again.
 
 ## Setting initial state
-![An old radio thing](http://support.radioshack.com/support_tutorials/communications/Images/pro2067e_init.gif)
+
 
 Enough talk, let's see some more code! In this lesson, we'll focus on just setting the _initial state_. Since we're just setting the initial state, it will remind you very much of props (since the data won't change). Keep in mind, though, that we're able to _change_ this state whenever we want, making for a very powerful feature for dynamic components.
 
@@ -34,7 +34,7 @@ Let's say we have a `<ToggleButton />` component. A toggle button has an on and 
 // src/components/ToggleButton.js
 import React from 'react';
 
-class ToggleButton extends React.Component { 
+class ToggleButton extends React.Component {
   constructor() {
     super();
 
@@ -55,9 +55,9 @@ class ToggleButton extends React.Component {
 export default ToggleButton;
 ```
 
-and in our `src/index.js` lets import that to see what it looks like 
+and in our `src/index.js` lets import that to see what it looks like
 
-```js 
+```js
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -86,7 +86,7 @@ class Address extends React.Component {
     this.state = {
       fullAddress: `${props.street}, ${props.city}`
     }
-  } 
+  }
 
   render() {
     return (
@@ -102,7 +102,7 @@ export default Address;
 
 And we should update our `src/index.js` to handle mounting this component:
 
-```js 
+```js
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -110,7 +110,7 @@ import ReactDOM from 'react-dom';
 import Address from './components/Address';
 
 ReactDOM.render(
-  <Address 
+  <Address
     street="Santa Monica Blvd."
     city="Santa Monica"
   />,
