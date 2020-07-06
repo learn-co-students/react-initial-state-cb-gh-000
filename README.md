@@ -7,7 +7,7 @@ In this lesson, we'll explain the concept of component state.
 ## Objectives
 1. Explain how to define a component's initial state
 2. Explain the difference between initialState and defaultProps
-3. Practice defining a component's initial state
+3. Practice defining a component's initial state h
 
 ## What's state?
 Let's quickly talk about what _state_ is in React. State is basically data that is mutated in your component. Like with any state, this state can also **change**. That's an important part: while a component can't change its own props, it _can_ change its state.
